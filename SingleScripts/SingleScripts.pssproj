@@ -32,7 +32,6 @@
     <Compile Include="psVersionLog.ps1" />
     <Compile Include="remoteInstall.ps1" />
     <Compile Include="renameHost.ps1" />
-    <Compile Include="Script2.ps1" />
     <Compile Include="SingleScripts.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
