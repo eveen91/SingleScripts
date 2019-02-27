@@ -7,10 +7,10 @@ $rename= {
 	Rename-Computer -NewName "$hostnameNew" -Force 
 	Restart-Computer 
 }
-$hostname= Read-Host "Podaj nazwê now¹ hosta"
-$hostnameNew= Read-Host "Podaj nazwê now¹ hosta"
-$uname= Read-Host "podaj login:"
-$pass= Read-Host "podaj has³o:"
+$hostname= Read-Host "Podaj obecn¹ nazwê hosta: "
+$hostnameNew= Read-Host "Podaj now¹ nazwê hosta: "
+$uname= Read-Host "Podaj swój login domenowy: "
+$pass= Read-Host "Podaj swoje has³o domenowe: "
 $secstr = ConvertTo-SecureString $pass -AsPlainText -Force
 $newcred = New-Object System.Management.Automation.PSCredential ($uname,$secstr)
 Invoke-Command -ComputerName $hostname -ScriptBlock $rename -credential $newcred
