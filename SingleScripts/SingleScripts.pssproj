@@ -28,7 +28,10 @@
   <ItemGroup />
   <ItemGroup>
     <Compile Include="defrag.ps1" />
+    <Compile Include="install ps 5.1 using dism.ps1" />
     <Compile Include="installModules.ps1" />
+    <Compile Include="lastBootTime.ps1" />
+    <Compile Include="ps-remote-win7.ps1" />
     <Compile Include="psVersionLog.ps1" />
     <Compile Include="remoteInstall.ps1" />
     <Compile Include="renameHost.ps1" />
