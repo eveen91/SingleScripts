@@ -1,9 +1,9 @@
 #
 # renameHost.ps1
-$hostname= Read-Host "Podaj nazwê hosta"
+$hostname= Read-Host "Podaj nazwÄ™ hosta"
 
 $commands={
-	$hostnameNew= Read-Host "Podaj nazwê now¹ hosta"
+	$hostnameNew= Read-Host "Podaj nowÄ… nazwÄ™ hosta"
 	Rename-Computer -NewName "$hostnameNew" -Force -Restart -DomainCredential (Get-Credential -Credential $uname)
 }
 Invoke-Command -ComputerName $hostname -ScriptBlock $commands
