@@ -36,6 +36,7 @@
     <Compile Include="lastBootTime.ps1" />
     <Compile Include="ps-remote-win7.ps1" />
     <Compile Include="DownloadTools.ps1" />
+    <Compile Include="PsTools.ps1" />
     <Compile Include="psVersionLog.ps1" />
     <Compile Include="remoteInstall.ps1" />
     <Compile Include="renameHost.ps1" />
