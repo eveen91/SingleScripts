@@ -25,7 +25,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="PsModulesList.txt" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="AD-modules.ps1" />
     <Compile Include="defrag.ps1" />
@@ -33,6 +35,7 @@
     <Compile Include="installModules.ps1" />
     <Compile Include="lastBootTime.ps1" />
     <Compile Include="ps-remote-win7.ps1" />
+    <Compile Include="PsTools.ps1" />
     <Compile Include="psVersionLog.ps1" />
     <Compile Include="remoteInstall.ps1" />
     <Compile Include="renameHost.ps1" />
