@@ -13,4 +13,13 @@ while($select -ne 0 )
 	Write-Host "4. Windows Update"
 	Write-Host "5. checklista zmian"
 	$select=Read-Host
+	switch ($select)
+	{
+		'1' {C:\Users\vectrauser\AppData\Local\DwiTools\Smartctl\smartctl.exe -a /dev/sda ; break}
+		'2' {}
+		'3' {}
+		'4' {}
+		'5' {}
+	
+	}
 }
