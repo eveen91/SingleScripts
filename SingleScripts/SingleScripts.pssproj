@@ -27,6 +27,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="AD-modules.ps1" />
     <Compile Include="defrag.ps1" />
     <Compile Include="install ps 5.1 using dism.ps1" />
     <Compile Include="installModules.ps1" />
