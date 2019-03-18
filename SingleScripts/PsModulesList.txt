@@ -1,2 +1,0 @@
-Install-Module -Name DellBIOSProviderX86
-Install-Module -Name DellBIOSProvider	
