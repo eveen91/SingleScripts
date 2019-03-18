@@ -2,6 +2,11 @@
 # PsTools.ps1
 #
 
+function list_scripts()
+{
+
+}
+
 #main
 $select=99
 while($select -ne 0 )
