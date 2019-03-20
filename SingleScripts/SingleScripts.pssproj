@@ -41,6 +41,7 @@
     <Compile Include="remoteInstall.ps1" />
     <Compile Include="renameHost.ps1" />
     <Compile Include="SingleScripts.ps1" />
+    <Compile Include="windows10updateto1809.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />

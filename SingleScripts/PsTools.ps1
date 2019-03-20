@@ -17,6 +17,7 @@ while($select -ne 0 )
 	Write-Host "3. Instalacja modu³ów powershell"
 	Write-Host "4. Windows Update"
 	Write-Host "5. checklista zmian"
+	Write-Host "6. Update to 1809"
 	$select=Read-Host
 	switch ($select)
 	{
@@ -25,6 +26,7 @@ while($select -ne 0 )
 		'3' {}
 		'4' {}
 		'5' {}
+		'6' {}
 	
 	}
 }
