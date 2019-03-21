@@ -29,4 +29,4 @@ $mount = Mount-DiskImage @mount_params
         # Write-Host "Copy complete"
 }
 #update
-Start-Process C:\Users\vectrauser\AppData\Local\DwiTools\Windows\setup.exe -ArgumentList "/auto upgrade /quiet /noreboot /compat ignorewarning" -Wait
+Start-Process C:\Users\vectrauser\AppData\Local\DwiTools\Windows\setup.exe -ArgumentList "/auto upgrade /quiet /noreboot /compat ignorewarning"
