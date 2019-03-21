@@ -11,6 +11,7 @@ if( -Not (Test-Path -Path $destination ) )
 
 #copy iso
 New-PSDrive -Name source -PSProvider FileSystem -Root \\vcgdysrnas01\dwi\PUBLIC\ | Out-Null
+#New-PSDrive -Name source -PSProvider FileSystem -Root \\192.168.180.20\PUBLIC\ | Out-Null
 Copy-Item -Path source:\Windows.iso -Destination C:\Users\vectrauser\AppData\Local\DwiTools\
 Remove-PSDrive source
 #unpack
@@ -24,9 +25,9 @@ $mount = Mount-DiskImage @mount_params
          $folder = mkdir C:\Users\vectrauser\AppData\Local\DwiTools\Windows\
         # Write-Host "Extracting '$iso' to '$folder'..."
          $params = @{Path = $source; Destination = $folder; Recurse = $true;}
-         cp @params
+         
          $hide = Dismount-DiskImage @mount_params
         # Write-Host "Copy complete"
 }
 #update
-Start-Process C:\Users\vectrauser\AppData\Local\DwiTools\Windows\setup.exe -ArgumentList "/auto upgrade /quiet /noreboot /compat ignorewarning"
+#Start-Process C:\Users\vectrauser\AppData\Local\DwiTools\Windows\setup.exe -ArgumentList "/auto upgrade /quiet /noreboot /compat ignorewarning"
