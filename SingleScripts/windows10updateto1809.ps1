@@ -2,7 +2,12 @@
 # windows10updateto1809.ps1
 #
 #test if path exist
+$destination= 'C:\Users\vectrauser\AppData\Local\DwiTools\'
 
+if( -Not (Test-Path -Path $destination ) )
+{
+   New-Item -ItemType directory -Path $destination
+}
 
 #copy iso
 New-PSDrive -Name source -PSProvider FileSystem -Root \\vcgdysrnas01\dwi\PUBLIC\ | Out-Null
