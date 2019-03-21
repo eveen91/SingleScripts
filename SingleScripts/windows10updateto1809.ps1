@@ -1,9 +1,13 @@
 #
 # windows10updateto1809.ps1
 #
-#copy iso
-Copy-Item "\\vcgdysrnas01\dwi\PUBLIC\Windows.iso" -Destination C:\Users\vectrauser\AppData\Local\DwiTools\
+#test if path exist
 
+
+#copy iso
+New-PSDrive -Name source -PSProvider FileSystem -Root \\vcgdysrnas01\dwi\PUBLIC\ | Out-Null
+Copy-Item -Path source:\Windows.iso -Destination C:\Users\vectrauser\AppData\Local\DwiTools\
+Remove-PSDrive source
 #unpack
 $iso=ls C:\Users\vectrauser\AppData\Local\DwiTools\*.iso
 $mount_params = @{ImagePath = $iso; PassThru = $true; ErrorAction = "Ignore"}
