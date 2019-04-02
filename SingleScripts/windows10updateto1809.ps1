@@ -25,9 +25,9 @@ $mount = Mount-DiskImage @mount_params
          $folder = mkdir C:\Users\vectrauser\AppData\Local\DwiTools\Windows\
         # Write-Host "Extracting '$iso' to '$folder'..."
          $params = @{Path = $source; Destination = $folder; Recurse = $true;}
-         
+         cp @params | Out-Null
          $hide = Dismount-DiskImage @mount_params
         # Write-Host "Copy complete"
 }
 #update
-#Start-Process C:\Users\vectrauser\AppData\Local\DwiTools\Windows\setup.exe -ArgumentList "/auto upgrade /quiet /noreboot /compat ignorewarning"
+Start-Process C:\Users\vectrauser\AppData\Local\DwiTools\Windows\setup.exe -ArgumentList "/auto upgrade /quiet /noreboot /compat ignorewarning"
